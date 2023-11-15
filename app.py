@@ -11,10 +11,7 @@ def home():
 def converter():
     valor = round(float(request.form.get('valor')),3)
     moeda_origem = request.form.get('moeda_origem')
-    moeda_destino = request.form.get('moeda_destino')
-    
-
-    # Chame a API para obter a taxa de câmbio
+    moeda_destino = request.form.get('moeda_destino')    
     api_url = f"https://api.freecurrencyapi.com/v1/latest?apikey={apikey}&base_currency={moeda_origem}&currencies={moeda_destino}"
     response = requests.get(api_url)
     data = response.json()
