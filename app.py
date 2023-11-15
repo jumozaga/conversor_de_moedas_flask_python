@@ -11,7 +11,8 @@ def home():
 def converter():
     valor = round(float(request.form.get('valor')),3)
     moeda_origem = request.form.get('moeda_origem')
-    moeda_destino = request.form.get('moeda_destino')    
+    moeda_destino = request.form.get('moeda_destino') 
+    apikey = 'fca_live_d4Jp8SDSGPK3y4FyeUcqFr2KdF3T3Ac407ZcIr2a'   
     api_url = f"https://api.freecurrencyapi.com/v1/latest?apikey={apikey}&base_currency={moeda_origem}&currencies={moeda_destino}"
     response = requests.get(api_url)
     data = response.json()
