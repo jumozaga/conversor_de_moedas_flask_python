@@ -1,0 +1,27 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Bem-vindo ao JuLU Conversor de Moedas!</h1>  
+    <h2>O valor {{valor}} em {{moeda_origem}} convertido é: {{ valor_convertido }} {{ moeda_destino }}</h2>
+    <h3> {{moeda_destino}} = {{taxa_cambio}}</h3>
+</body>
+</html> -->
+
+{% extends "base.html" %}
+
+{% block title %}Resultado{% endblock %}
+ 
+
+{% block content %}
+<div id="resp" action="#">
+    <h2>O valor {{valor}} em {{moeda_origem}} convertido é: {{valor_convertido}} {{ moeda_destino }}</h2>
+   <h3> {{moeda_destino}} = {{taxa_cambio}}</h3>
+
+</div id="resp">    
+{% endblock %}
+
+
