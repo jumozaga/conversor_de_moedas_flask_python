@@ -4,9 +4,20 @@
   <title>{% block title %}Conversor de Moedas{% endblock %}</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   <script src="https://kit.fontawesome.com/506a039e28.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>{% block header %}Bem-vindo ao JuLU Conversor de Moedas!{% endblock %}</h1>      
+  {% block header %}
+  <menu>   
+    <h1> Bem vindos !!!</h1>  
+ 
+  </menu>
+  <span>Conversor de Moedas JuLu!</span>
+ 
+  {% endblock %}   
+   
   {% block content %}{% endblock %}
   <footer>
       {% block footer %}Programa Match IBM @2023 - Feito por: 
