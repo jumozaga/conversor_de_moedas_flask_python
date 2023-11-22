@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Conversor de Moedas{% endblock %}
 
-{% block header %}Bem-vindo ao JuLU Conversor de Moedas!{% endblock %}
 
 {% block content %}
-<div class="container">
+
     <form action="/converter" method="post">
         <label for="valor">Valor:</label>
         <input type="number" name="valor" step="0.01" required>
@@ -83,8 +81,5 @@
         </select>         
         <button type="submit">Converter</button>
     </form>
-
-</div>
-
 {% endblock %}
 

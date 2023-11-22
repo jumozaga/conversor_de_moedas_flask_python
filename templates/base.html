@@ -9,16 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  {% block header %}
-  <menu>   
+  <menu> 
+    {% block header %}    
     <h1> Bem vindos !!!</h1>  
- 
-  </menu>
+    {% endblock %}  
+  </menu> 
+
   <span>Conversor de Moedas JuLu!</span>
- 
-  {% endblock %}   
    
-  {% block content %}{% endblock %}
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+  
   <footer>
       {% block footer %}Programa Match IBM @2023 - Feito por: 
       <a href="https://github.com/jumozaga"><i class="fa fa-github"></i> Juliana</a>

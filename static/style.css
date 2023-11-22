@@ -25,43 +25,45 @@ img{
 
 .container {
     display: flex;
-    flex-direction: row;    
+    flex-direction: column;    
     gap: 24px;
     padding: 10%;
     width: 80%;
     height: 50%;
     background-image: url('https://img.freepik.com/fotos-gratis/riqueza-de-pilha-de-moedas-cresce-com-investimento-gerado-por-ia_188544-18520.jpg');
-  background-size: cover; /* Isso fará com que a imagem de fundo cubra todo o elemento body */
-  background-position: center; 
+    background-size: cover; /* Isso fará com que a imagem de fundo cubra todo o elemento body */
+    background-position: center; 
     /* background-color: aqua; */
-
 }
 
-form, #resp {
+form, #resp{
     background-color:rgb(30, 126, 46);
     border-radius: 6px;
     width: 410px;
-    height: 200px;
+    height: 300px;
     text-align: center;
-    margin-top: 36px;
+    align-content: center;   
     margin: auto;
     padding: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
-label{
-    display: block;
-    margin-top: 6px;
-    margin-bottom: 5px;
+label,input,select{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+   
 }
 
-input, button, label{
-    font-size: 20px;
-    }
-
-input, button{
+button, label, input, select{
     padding: 5px;
     width: 200px;
-    margin-bottom: 10px;
+    height: 36px;
+    border-radius: 8px;
+    align-self: center;
+    font-size: 20px;
 }
 
 button {
@@ -89,6 +91,7 @@ menu{
     text-align: center;
     padding: 10px;   
     width: 100%;
+    height: 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,3 +111,14 @@ footer {
     align-items: center;
     gap: 10px;
  }
+ #resp{
+    margin-top: 2%;
+    background-color:rgb(30, 126, 46);
+    width: 500px;
+    height: 300px;
+    /* margin: 6% 28%; */
+    border-radius: 6px;
+    padding: 1%;
+    color: rgb(245, 248, 244);
+}
+ 
